@@ -17,6 +17,7 @@ body {
 /* -------------------------------- Globales -------------------------------- */
 .contenedor {
   max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -33,6 +34,7 @@ h1 {
 
 h2 {
   font-size: 4rem;
+  line-height: 1.2;
 }
 
 h3 {
@@ -41,6 +43,7 @@ h3 {
 
 h4 {
   font-size: 2.8rem;
+  line-height: 1.2;
 }
 
 img {
@@ -50,4 +53,188 @@ img {
 /* ------------------------------- Utilidades ------------------------------- */
 .centrar-texto {
   text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+/* --------------------------------- Botones -------------------------------- */
+.btn {
+  display: block;
+  text-align: center;
+  padding: 1rem 3rem;
+  margin: 2rem 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    display: inline-block;
+  }
+}
+
+.btn-primario {
+  background-color: #000000;
+}
+.btn-secundario {
+  background-color: #784d3c;
+}
+
+/* --------------------------------- Header --------------------------------- */
+@media (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site-header {
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60rem;
+}
+
+.site-header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-header h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.site-header h1 span {
+  font-weight: 700;
+}
+
+/* ------------------------------- Navegacion ------------------------------- */
+.navegacion a {
+  text-align: center;
+  display: block;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .navegacion a {
+    display: inline;
+    margin-right: 2rem;
+  }
+
+  .navegacion a:last-of-type {
+    margin: 0;
+  }
+}
+
+/* --------------------------------- Header --------------------------------- */
+.texto-header {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  .texto-header {
+    margin-top: 15rem;
+  }
+}
+
+.texto-header p {
+  font-size: 2.2rem;
+}
+
+/* --------------------------- Contenido Principal -------------------------- */
+.contenido-principal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog,
+.cursos {
+  flex: 0 0 100%;
+}
+
+.cursos {
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .contenido-principal {
+    justify-content: space-between;
+  }
+  .blog {
+    flex-basis: 66.6%;
+  }
+  .cursos {
+    flex-basis: calc(33.3% - 4rem);
+    order: 2;
+  }
+}
+
+/* -------------------------------- Opcional -------------------------------- */
+.entrada-blog {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.entrada-blog:last-of-type {
+  border-bottom: none;
+}
+
+/* ----------------------------- Cursos Sidebar ----------------------------- */
+.cursos-lista {
+  padding: 0;
+  list-style: none;
+}
+
+.curso {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.curso:last-of-type {
+  border-bottom: none;
+}
+
+.curso p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+}
+
+.curso p:first-of-type {
+  padding-top: 1.5rem;
+}
+
+.curso p span {
+  font-weight: 400;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+.site-footer {
+  background-color: #000000;
+  padding: 3rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.site-footer p {
+  color: #ffffff;
+  font-size: 4remm;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+
+.site-footer p span {
+  font-weight: 700;
 }
